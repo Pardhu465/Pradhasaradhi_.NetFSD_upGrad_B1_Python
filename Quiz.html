@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h2>E-Learning Platform</h2>
+
+<nav>
+<a href="Dashboard.html">Dashboard</a>
+<a href="Courses.html">Courses</a>
+<a href="Quiz.html">Quiz</a>
+<a href="Profile.html">Profile</a>
+</nav>
+
+</header>
+
+<main>
+
+<div class="breadcrumb">
+<a href="Dashboard.html">Home</a> > Quiz
+</div>
+
+<h2 id="quiz">Quiz</h2>
+
+<div id="quizMessage">
+<p>Take a breath... we’re about to start the quiz in 2 seconds!</p>
+</div>
+
+<div id="quizContainer"></div>
+
+<div id="SubmitButton">
+<button onclick="submitQuiz()">Submit Quiz</button>
+</div>
+
+<div id="result" class="result-card"></div>
+
+</main>
+
+<script src="data.js"></script>
+<script src="quiz.js"></script>
+
+</body>
+</html>

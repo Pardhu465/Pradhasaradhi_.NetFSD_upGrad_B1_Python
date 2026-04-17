@@ -1,0 +1,16 @@
+{
+  "name": "mini_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Course.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
