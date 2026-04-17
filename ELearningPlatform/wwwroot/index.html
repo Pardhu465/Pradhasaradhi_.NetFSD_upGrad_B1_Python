@@ -1,0 +1,63 @@
+"<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>E-Learning Platform</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body class='auth-body'>
+<div class='auth-wrap'>
+  <div class='auth-card'>
+    <div class='auth-logo'>
+      <span class='logo-icon'>📚</span>
+      <h1>E-Learning Platform</h1>
+      <p>Learn. Grow. Succeed.</p>
+    </div>
+    <!-- Tab Buttons -->
+    <div class='auth-tabs'>
+      <button class='tab-btn active' id='loginTab' onclick='switchTab("login")'>Login</button>
+      <button class='tab-btn' id='registerTab' onclick='switchTab("register")'>Register</button>
+    </div>
+    <!-- Message -->
+    <div id='authMsg' class='auth-msg' style='display:none'></div>
+    <!-- LOGIN FORM -->
+    <div id='loginSection'>
+      <div class='input-group-custom'>
+        <label>Email Address</label>
+        <input type='email' id='loginEmail' placeholder='Enter your email' class='form-control'>
+      </div>
+      <div class='input-group-custom'>
+        <label>Password</label>
+        <input type='password' id='loginPass' placeholder='Enter your password' class='form-control'>
+      </div>
+      <button class='auth-btn' onclick='loginUser()'>
+        <span>Login</span> <span class='btn-arrow'>→</span>
+      </button>
+      <p class='switch-hint'>New here? <a href='#' onclick='switchTab("register")'>Create an account</a></p>
+    </div>
+    <!-- REGISTER FORM -->
+    <div id='registerSection' style='display:none'>
+      <div class='input-group-custom'>
+        <label>Full Name</label>
+        <input type='text' id='regName' placeholder='Your full name' class='form-control'>
+      </div>
+      <div class='input-group-custom'>
+        <label>Email Address</label>
+        <input type='email' id='regEmail' placeholder='Your email' class='form-control'>
+      </div>
+      <div class='input-group-custom'>
+        <label>Password <small>(min 6 chars)</small></label>
+        <input type='password' id='regPass' placeholder='Create password' class='form-control'>
+      </div>
+      <button class='auth-btn' onclick='registerUser()'>
+        <span>Create Account</span> <span class='btn-arrow'>→</span>
+      </button>
+      <p class='switch-hint'>Already have an account? <a href='#' onclick='switchTab("login")'>Login here</a></p>
+    </div>
+  </div>
+</div>
+<script src='auth.js'></script>
+</body>
+</html>"
