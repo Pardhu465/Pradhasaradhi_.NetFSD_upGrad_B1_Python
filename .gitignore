@@ -1,0 +1,34 @@
+# Visual Studio / .NET
+.vscode/
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.vs/
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.DS_Store
+*.ncb
+*.sdf
+*.cache
+*.ilk
+*.pdb
+*.idb
+*.class
+*.exe
+*.dll
+*.zip
+*.tar.gz
+*.7z
+
+# Rider
+.idea/
+
+# ASP.NET temporary files
+*.vsix
+
+# OS generated files
+.DS_Store
