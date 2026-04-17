@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Courses — E-Learning</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header>
+  <h2 class='text-center'>E-Learning Platform</h2>
+  <nav class='nav justify-content-center'>
+    <a href='Dashboard.html'>Dashboard</a>
+    <a href='Courses.html'>Courses</a>
+    <a href='Quiz.html'>Quiz</a>
+    <a href='Profile.html'>Profile</a>
+    <a href='#' class='nav-logout' onclick='logout()'>Logout</a>
+  </nav>
+</header>
+<main>
+  <div class='container mt-4'>
+    <p class='breadcrumb'><a href='Dashboard.html'>Home</a> &gt; Courses</p>
+    <div class='page-header-row'>
+      <h2>All Courses</h2>
+      <input type='text' id='searchBox' class='form-control search-box' placeholder='Search courses…' oninput='filterCourses()'>
+    </div>
+    <!-- Course Cards Grid -->
+    <div id='courseGrid' class='dashboard-grid'>
+      <p class='muted'>Loading courses…</p>
+    </div>
+    <!-- Lesson Panel (hidden until course clicked) -->
+    <div id='lessonPanel' class='lesson-panel' style='display:none'>
+      <button class='back-btn' onclick='closeLesson()'>← Back to Courses</button>
+      <h3 id='lessonCourseTitle'></h3>
+      <div id='lessonList'></div>
+      <button class='start-btn mt-3' onclick='goToQuiz()'>Take Quiz →</button>
+    </div>
+  </div>
+</main>
+<footer class='text-center mt-5 p-3 bg-light'><p>© 2026 E-Learning Platform</p></footer>
+<script src='course.js'></script>
+</body>
+</html>
